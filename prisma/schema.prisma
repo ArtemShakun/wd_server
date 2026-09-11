@@ -1,5 +1,3 @@
-
-
 generator client {
   provider = "prisma-client"
   output   = "../generated/prisma"
@@ -17,4 +15,46 @@ model User {
   username  String?          
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+enum MuscleRole {
+  PRIMARY    // червоний - основне навантаження
+  SECONDARY  // помаранчевий - додаткове навантаження  
+  STABILIZER // зелений - стабілізатори
+}
+
+enum Category {
+  CHEST
+  BACK
+  SHOULDERS
+  BICEPS
+  TRICEPS
+  FOREARMS
+  ABS
+  OBLIQUES
+  QUADS
+  HAMSTRINGS
+  GLUTES
+  CALVES
+  TRAPS
+}
+
+model Exercise {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  category    Category
+  muscles     ExerciseMuscle[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ExerciseMuscle {
+  id         String      @id @default(uuid())
+  exerciseId String
+  muscle     Category
+  role       MuscleRole
+
+  exercise   Exercise    @relation(fields: [exerciseId], references: [id])
+
+  @@unique([exerciseId, muscle])
 }
