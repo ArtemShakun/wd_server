@@ -1,19 +1,4 @@
 {
-  "muscles": [
-    { "muscleId": "Quads", "load": "high" },
-    { "muscleId": "Calves", "load": "medium" },
-    { "muscleId": "CoreAbs", "load": "high" },
-    { "muscleId": "CoreObliques", "load": "low" },
-    { "muscleId": "Chest", "load": "medium" },
-    { "muscleId": "Biceps", "load": "high" },
-    { "muscleId": "Triceps", "load": "medium" },
-    { "muscleId": "AnteriorDeltoid", "load": "high" },
-    { "muscleId": "LateralDeltoid", "load": "low" },
-    { "muscleId": "Traps", "load": "high" }
-  ]
-}
-
-{
   "exercises": [
     {
       "name": "Bench Press",
