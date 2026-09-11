@@ -1,0 +1,85 @@
+{
+  "exercises": [
+    {
+      "name": "Bench Press",
+      "category": "CHEST",
+      "muscles": [
+        { "muscle": "CHEST", "role": "PRIMARY" },
+        { "muscle": "TRICEPS", "role": "SECONDARY" },
+        { "muscle": "SHOULDERS", "role": "SECONDARY" },
+        { "muscle": "TRAPS", "role": "STABILIZER" }
+      ]
+    },
+    {
+      "name": "Pull Up",
+      "category": "BACK",
+      "muscles": [
+        { "muscle": "BACK", "role": "PRIMARY" },
+        { "muscle": "BICEPS", "role": "SECONDARY" },
+        { "muscle": "FOREARMS", "role": "SECONDARY" },
+        { "muscle": "ABS", "role": "STABILIZER" }
+      ]
+    },
+    {
+      "name": "Squat",
+      "category": "QUADS",
+      "muscles": [
+        { "muscle": "QUADS", "role": "PRIMARY" },
+        { "muscle": "GLUTES", "role": "PRIMARY" },
+        { "muscle": "HAMSTRINGS", "role": "SECONDARY" },
+        { "muscle": "CALVES", "role": "STABILIZER" },
+        { "muscle": "ABS", "role": "STABILIZER" },
+        { "muscle": "TRAPS", "role": "STABILIZER" }
+      ]
+    },
+    {
+      "name": "Bicep Curl",
+      "category": "BICEPS",
+      "muscles": [
+        { "muscle": "BICEPS", "role": "PRIMARY" },
+        { "muscle": "FOREARMS", "role": "SECONDARY" }
+      ]
+    },
+    {
+      "name": "Tricep Pushdown",
+      "category": "TRICEPS",
+      "muscles": [
+        { "muscle": "TRICEPS", "role": "PRIMARY" },
+        { "muscle": "FOREARMS", "role": "STABILIZER" }
+      ]
+    },
+    {
+      "name": "Overhead Press",
+      "category": "SHOULDERS",
+      "muscles": [
+        { "muscle": "SHOULDERS", "role": "PRIMARY" },
+        { "muscle": "TRICEPS", "role": "SECONDARY" },
+        { "muscle": "TRAPS", "role": "SECONDARY" },
+        { "muscle": "ABS", "role": "STABILIZER" }
+      ]
+    },
+    {
+      "name": "Deadlift",
+      "category": "BACK",
+      "muscles": [
+        { "muscle": "BACK", "role": "PRIMARY" },
+        { "muscle": "GLUTES", "role": "PRIMARY" },
+        { "muscle": "HAMSTRINGS", "role": "SECONDARY" },
+        { "muscle": "QUADS", "role": "SECONDARY" },
+        { "muscle": "TRAPS", "role": "SECONDARY" },
+        { "muscle": "FOREARMS", "role": "STABILIZER" },
+        { "muscle": "ABS", "role": "STABILIZER" }
+      ]
+    },
+    {
+      "name": "Plank",
+      "category": "ABS",
+      "muscles": [
+        { "muscle": "ABS", "role": "PRIMARY" },
+        { "muscle": "OBLIQUES", "role": "SECONDARY" },
+        { "muscle": "SHOULDERS", "role": "STABILIZER" },
+        { "muscle": "GLUTES", "role": "STABILIZER" }
+      ]
+    }
+  ]
+}
