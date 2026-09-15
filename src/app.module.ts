@@ -4,14 +4,14 @@ import { createObserveModule } from '@nestjs/observe';
 import { AppController } from './app.controller.js';
 import { AppService } from './app.service.js';
 import { AuthModule } from './auth/auth.module.js';
-import { PrismaModule } from './prisma/prisma.module.js';
-import { ExercisesController } from './exercises/exercises.controller.js';
 import { ExercisesModule } from './exercises/exercises.module.js';
+import { PrismaModule } from './prisma/prisma.module.js';
+import { ProgramsModule } from './programs/programs.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
 @Module({
-  imports: [PrismaModule, AuthModule, ExercisesModule],
+  imports: [PrismaModule, AuthModule, ExercisesModule, ProgramsModule],
   controllers: [AppController],
   providers: [AppService],
 })
